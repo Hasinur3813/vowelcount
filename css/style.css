@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: segoe ui;
+  }
+  
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #ff7675,#fd79a8);
+  }
+/* vowel count */
+.vowelBox{
+    position: relative;
+  }
+  .box{
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:400px;
+    height:280px;
+    background:#3498db;
+    opacity: 0.8;
+    position: relative;
+  }
+  .box h3,h2{
+    color:#033f66;
+    padding:10px;
+
+  }
+  .box h2{
+    font-size: 16px;
+  }
+  .box #inputBox {
+    padding: 10px;
+    width: 237px;
+    height: 139px;
+    resize: none;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color:#3498db;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.2s;
+  }
+  
+  .box #inputBox:focus{
+    box-shadow: 0 0 5px #000437;
+  }
+  
+.box .count{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.count #countBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #fff;
+    color:#3498db;
+    font-weight: 700;
+}
+  .box .active{
+    box-shadow:0 0 5px #e84393,
+               0 0 10px #e84393,
+               0 0 15px #e84393,
+               0 0 20px #e84393;
+  }
+
+  @media(max-width:420px){
+    .box{
+        width:270px;
+        height:340px;
+        display: block;
+    }
+  }
